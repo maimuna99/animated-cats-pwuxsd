@@ -65,7 +65,7 @@ const sadCat = {
     </li>
     <li>
       <span class="cat"
-      :class="lolCat.class"
+      :class="{ spinning: lolCat.isSpinning }"
       :style="`background-color: ${lolCat.getColor()}`"
       >😹</span>
       I'm spinning and yellow
