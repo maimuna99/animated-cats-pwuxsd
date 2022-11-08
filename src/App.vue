@@ -72,8 +72,8 @@ const sadCat = {
     </li>
     <li>
       <span class="cat"
-      :class="sadCat.isClass"
-      :style="sadCat.isColor"
+      :class= "{ wobbly: sadCat.isClass('wobbly')}"
+      :style="{backgroundColor: sadCat.isColor('blue') ? 'blue' : 'inherit'}"
       >😿</span>
       I'm wobbly and blue
     </li>
@@ -84,6 +84,7 @@ const sadCat = {
 /* dont change these classes either :) */
 li {
   margin: 2em 0;
+  
 }
 
 .cat {
@@ -94,6 +95,7 @@ li {
   animation-iteration-count: infinite;
   animation-duration: 1s;
   animation-fill-mode: both;
+  border-radius: 50%;
 }
 
 .joyful {
