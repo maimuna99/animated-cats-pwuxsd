@@ -66,7 +66,7 @@ const sadCat = {
     <li>
       <span class="cat"
       :class="lolCat.class"
-      :style="lolCat.color== lolCat.getColor()"
+      :style="`background-color: ${lolCat.getColor()}`"
       >😹</span>
       I'm spinning and yellow
     </li>
